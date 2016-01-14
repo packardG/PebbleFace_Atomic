@@ -14,7 +14,7 @@ static void update_time() {
   //Write current hours/min into buffer
   static char s_buffer[8];
   strftime(s_buffer, sizeof(s_buffer), clock_is_24h_style() ?
-                                          "%h:%M" : "%I:%M", tick_time);
+                                          "%H:%M" : "%l:%M", tick_time);
   // Write date into buffer
   static char s_date_buffer[16];
   strftime(s_date_buffer, sizeof(s_date_buffer), "%a.%b %d", tick_time);
@@ -61,8 +61,8 @@ static void main_window_load(Window *window){
   
   // Create the TextLayer with specific bounds
   s_time_layer = text_layer_create(
-      GRect(0, PBL_IF_ROUND_ELSE(58, 52), bounds.size.w, 50));
-  s_date_layer = text_layer_create(GRect(0, 120, 144, 30));
+      GRect(-5, PBL_IF_ROUND_ELSE(58, 99), bounds.size.w, 50));
+  s_date_layer = text_layer_create(GRect(0, 144, 144, 30));
   
   // Create GFont
   s_time_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_AKASHI_35));
