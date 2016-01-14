@@ -1,0 +1,43 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "packardgilson@gmail.com",
+    "longName": "Atomic",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "images/converted.png",
+                "menuIcon": true,
+                "name": "IMAGE_ATOM",
+                "targetPlatforms": null,
+                "type": "png"
+            },
+            {
+                "file": "fonts/Akashi.ttf",
+                "name": "FONT_AKASHI_19",
+                "targetPlatforms": null,
+                "type": "font"
+            },
+            {
+                "file": "fonts/Akashi.ttf",
+                "name": "FONT_AKASHI_35",
+                "targetPlatforms": null,
+                "type": "font"
+            }
+        ]
+    },
+    "sdkVersion": "3",
+    "shortName": "Atom",
+    "targetPlatforms": [
+        "basalt",
+        "chalk"
+    ],
+    "uuid": "7f6e07e7-b4be-4fbf-95c6-c1fcff35ff27",
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": true
+    }
+}
