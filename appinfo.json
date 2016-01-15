@@ -1,13 +1,23 @@
 {
-    "appKeys": {},
+    "appKeys": {
+        "KEY_CONDITIONS": 1,
+        "KEY_TEMPERATURE": 0
+    },
     "capabilities": [
-        ""
+        "location"
     ],
     "companyName": "packardgilson@gmail.com",
     "longName": "Atomic",
     "projectType": "native",
     "resources": {
         "media": [
+            {
+                "file": "images/atom_logo.png",
+                "menuIcon": true,
+                "name": "IMAGE_LOGO",
+                "targetPlatforms": null,
+                "type": "bitmap"
+            },
             {
                 "file": "images/bt-icon.png",
                 "name": "IMAGE_BT_ICON",
@@ -16,7 +26,6 @@
             },
             {
                 "file": "images/converted.png",
-                "menuIcon": true,
                 "name": "IMAGE_ATOM",
                 "targetPlatforms": null,
                 "type": "png"
@@ -30,6 +39,12 @@
             {
                 "file": "fonts/Akashi.ttf",
                 "name": "FONT_AKASHI_35",
+                "targetPlatforms": null,
+                "type": "font"
+            },
+            {
+                "file": "fonts/Akashi.ttf",
+                "name": "FONT_AKASHI_15",
                 "targetPlatforms": null,
                 "type": "font"
             }
